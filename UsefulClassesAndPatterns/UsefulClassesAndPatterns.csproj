@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,14 +50,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Classes\Excel\ExcelManipul.cs" />
+    <Compile Include="Classes\FileReadWriteList\FileLab.cs" />
+    <Compile Include="Classes\Matrix\Matrix.cs" />
+    <Compile Include="Classes\StartWars\Client\Client.cs" />
+    <Compile Include="Classes\StartWars\Client\Enums.cs" />
+    <Compile Include="Classes\StartWars\Gadgets\AbstractGadgets.cs" />
+    <Compile Include="Classes\StartWars\Gadgets\FirstAidKit.cs" />
+    <Compile Include="Classes\StartWars\Gadgets\Grenade.cs" />
+    <Compile Include="Classes\StartWars\Gadgets\Jetpack.cs" />
+    <Compile Include="Classes\StartWars\Gadgets\NoiseGenerator.cs" />
+    <Compile Include="Classes\StartWars\Weapons\AbstractWeapon.cs" />
+    <Compile Include="Classes\StartWars\Weapons\AssaultRifle.cs" />
+    <Compile Include="Classes\StartWars\Weapons\MachineGun.cs" />
+    <Compile Include="Classes\StartWars\Weapons\SniperRifle.cs" />
+    <Compile Include="Classes\StartWars\Weapons\TommyGun.cs" />
+    <Compile Include="Forms\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Patterns\AbstractFactory\AbstractFactory.cs" />
+    <Compile Include="Patterns\AbstractFactory\AssaultFartory.cs" />
+    <Compile Include="Patterns\AbstractFactory\GunnerFactory.cs" />
+    <Compile Include="Patterns\AbstractFactory\ReconFactory.cs" />
+    <Compile Include="Patterns\AbstractFactory\SniperFactory.cs" />
+    <Compile Include="Patterns\Builder\AbstractBuilder.cs" />
+    <Compile Include="Patterns\Builder\ConctreteBuilder.cs" />
+    <Compile Include="Patterns\Builder\Director.cs" />
+    <Compile Include="Patterns\Builder\Product.cs" />
+    <Compile Include="Patterns\Prototype\AbstractPrototype.cs" />
+    <Compile Include="Patterns\Prototype\ConcretePrototypeB.cs" />
+    <Compile Include="Patterns\Prototype\ConctretePrototypeA.cs" />
+    <Compile Include="Patterns\Singleton\Singleton.cs" />
+    <Compile Include="Classes\StartWars\Solders\AbstractSolder.cs" />
+    <Compile Include="Classes\StartWars\Solders\Assault.cs" />
+    <Compile Include="Classes\StartWars\Solders\Gunner.cs" />
+    <Compile Include="Classes\StartWars\Solders\Recon.cs" />
+    <Compile Include="Classes\StartWars\Solders\Sniper.cs" />
+    <Compile Include="Patterns\Strategy\ConctreteStrategyA.cs" />
+    <Compile Include="Patterns\Strategy\ConctreteStrategyB.cs" />
+    <Compile Include="Patterns\Strategy\Context.cs" />
+    <Compile Include="Patterns\Strategy\Example\Car.cs" />
+    <Compile Include="Patterns\Strategy\Example\ElectricMove.cs" />
+    <Compile Include="Patterns\Strategy\Example\IMovable.cs" />
+    <Compile Include="Patterns\Strategy\Example\PetrolMove.cs" />
+    <Compile Include="Patterns\Strategy\IStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +111,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Patterns\Observer\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

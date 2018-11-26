@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UsefulClassesAndPatterns
+namespace UsefulClassesAndPatterns.Forms
 {
-    public partial class Form1 : Form
+    public partial class BaseForm : Form
     {
-        public Form1()
+        public BaseForm()
         {
             InitializeComponent();
         }
