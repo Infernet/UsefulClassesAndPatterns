@@ -121,6 +121,16 @@
     <Compile Include="Classes\StartWars\Solders\Gunner.cs" />
     <Compile Include="Classes\StartWars\Solders\Recon.cs" />
     <Compile Include="Classes\StartWars\Solders\Sniper.cs" />
+    <Compile Include="Patterns\State\AbstractState.cs" />
+    <Compile Include="Patterns\State\Context.cs" />
+    <Compile Include="Patterns\State\Example\GasWaterState.cs" />
+    <Compile Include="Patterns\State\Example\IWaterState.cs" />
+    <Compile Include="Patterns\State\Example\LiquidWaterState.cs" />
+    <Compile Include="Patterns\State\Example\SolidWaterState.cs" />
+    <Compile Include="Patterns\State\Example\Water.cs" />
+    <Compile Include="Patterns\State\Program.cs" />
+    <Compile Include="Patterns\State\StateA.cs" />
+    <Compile Include="Patterns\State\StateB.cs" />
     <Compile Include="Patterns\Strategy\ConctreteStrategyA.cs" />
     <Compile Include="Patterns\Strategy\ConctreteStrategyB.cs" />
     <Compile Include="Patterns\Strategy\Context.cs" />
