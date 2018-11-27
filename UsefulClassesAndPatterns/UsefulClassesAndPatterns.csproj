@@ -80,6 +80,38 @@
     <Compile Include="Patterns\Builder\ConctreteBuilder.cs" />
     <Compile Include="Patterns\Builder\Director.cs" />
     <Compile Include="Patterns\Builder\Product.cs" />
+    <Compile Include="Patterns\Commands\ACommand.cs" />
+    <Compile Include="Patterns\Commands\Client.cs" />
+    <Compile Include="Patterns\Commands\Command.cs" />
+    <Compile Include="Patterns\Commands\Example\Client.cs" />
+    <Compile Include="Patterns\Commands\Example\ICommand.cs" />
+    <Compile Include="Patterns\Commands\Example\Microwave.cs" />
+    <Compile Include="Patterns\Commands\Example\MicrowaveOnCommand.cs" />
+    <Compile Include="Patterns\Commands\Example\Pult.cs" />
+    <Compile Include="Patterns\Commands\Example\TV.cs" />
+    <Compile Include="Patterns\Commands\Example\TVOnCommand.cs" />
+    <Compile Include="Patterns\Commands\Invoker.cs" />
+    <Compile Include="Patterns\Commands\Receiver.cs" />
+    <Compile Include="Patterns\Iterator\AbstractAggregate.cs" />
+    <Compile Include="Patterns\Iterator\AbstractIterator.cs" />
+    <Compile Include="Patterns\Iterator\Example\Book.cs" />
+    <Compile Include="Patterns\Iterator\Example\IBookIterator.cs" />
+    <Compile Include="Patterns\Iterator\Example\IBookNumerable.cs" />
+    <Compile Include="Patterns\Iterator\Example\Library.cs" />
+    <Compile Include="Patterns\Iterator\Example\LibraryNumerator.cs" />
+    <Compile Include="Patterns\Iterator\Example\Reader.cs" />
+    <Compile Include="Patterns\Iterator\Program.cs" />
+    <Compile Include="Patterns\Iterator\ConctreteAggregate.cs" />
+    <Compile Include="Patterns\Iterator\ConctreteIterator.cs" />
+    <Compile Include="Patterns\Observer\ConctreteObservable.cs" />
+    <Compile Include="Patterns\Observer\Example\Bank.cs" />
+    <Compile Include="Patterns\Observer\Example\Broker.cs" />
+    <Compile Include="Patterns\Observer\Example\IObservable.cs" />
+    <Compile Include="Patterns\Observer\Example\IObserver.cs" />
+    <Compile Include="Patterns\Observer\Example\Stock.cs" />
+    <Compile Include="Patterns\Observer\Example\StockInfo.cs" />
+    <Compile Include="Patterns\Observer\IObservable.cs" />
+    <Compile Include="Patterns\Observer\IObserver.cs" />
     <Compile Include="Patterns\Prototype\AbstractPrototype.cs" />
     <Compile Include="Patterns\Prototype\ConcretePrototypeB.cs" />
     <Compile Include="Patterns\Prototype\ConctretePrototypeA.cs" />
@@ -97,6 +129,12 @@
     <Compile Include="Patterns\Strategy\Example\IMovable.cs" />
     <Compile Include="Patterns\Strategy\Example\PetrolMove.cs" />
     <Compile Include="Patterns\Strategy\IStrategy.cs" />
+    <Compile Include="Patterns\Template Method\AbstractClass.cs" />
+    <Compile Include="Patterns\Template Method\ConctreteClass.cs" />
+    <Compile Include="Patterns\Template Method\Example\AbstractEducation.cs" />
+    <Compile Include="Patterns\Template Method\Example\Program.cs" />
+    <Compile Include="Patterns\Template Method\Example\School.cs" />
+    <Compile Include="Patterns\Template Method\Example\University.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\BaseForm.resx">
@@ -125,8 +163,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Patterns\Observer\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

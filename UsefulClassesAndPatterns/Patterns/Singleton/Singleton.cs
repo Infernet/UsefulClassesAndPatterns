@@ -21,7 +21,7 @@ namespace UsefulClassesAndPatterns.Patterns.Singleton
             Client = new Client();
         }
 
-        public static Singleton GetSingleton()
+        public static Singleton GetInstance()
         {
             if (SingletonClient == null)
                 SingletonClient = new Singleton();

@@ -16,7 +16,7 @@ namespace UsefulClassesAndPatterns.Patterns.Prototype
 
         public override AbstractPrototype Clone()
         {
-            return new ConcretePrototypeB(id);
+            return new ConcretePrototypeB(this.Id);
         }
     }
 }
